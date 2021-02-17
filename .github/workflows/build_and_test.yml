@@ -122,6 +122,8 @@ jobs:
 
     - run: meteor npm run typecheck
 
+    - run: npm run build-storybook ; rm -rf ./storybook-static
+
     # To reduce memory need during actual build, build the packages solely first
     # - name: Build a Meteor cache
     #   run: |
